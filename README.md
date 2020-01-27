@@ -6,9 +6,10 @@ that only provide concrete implementations, not interfaces.
 There is an example concrete package in [pkg/external/concrete](pkg/external/concrete).
 It contains some client that does two useful things: hack servers and mine bitcoins.
 
-Our server that we're writing for this application is interested in hacking servers, so
-we've imported this concrete package to do that for us.  Unfortunately the concrete package
-has not supplied us with an interface; we can ONLY get a concrete implementation out of it.
+Our server in [internal/server](internal/server) that we're writing for this
+application is interested in hacking servers, so we've imported this concrete
+package to do that for us.  Unfortunately the concrete package has not supplied
+us with an interface; we can ONLY get a concrete implementation out of it.
 
 The problem is we still want to write tests for our code.  So how do we test with a client
 that will reach external resources if we let it?
