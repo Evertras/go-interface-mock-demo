@@ -1,6 +1,7 @@
-# go-interface-mock-demo
+# Mocking external packages in Go
 
-Quick demonstration of how to use Go interfaces to mock existing concrete libraries.
+Quick demonstration of how to use Go interfaces to mock third party packages
+that only provide concrete implementations, not interfaces.
 
 There is an example concrete package in [pkg/external/concrete](pkg/external/concrete).
 It contains some client that does two useful things: hack servers and mine bitcoins.
